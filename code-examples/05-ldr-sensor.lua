@@ -1,7 +1,7 @@
 -- 05-ldr-sensor.lua
 -- Read LDR value using the ADC
 
-STEP=3.3/1024
+STEP=1/1024
 DARK_THRESHOLD=600
 
 local adc_val, status
@@ -14,7 +14,7 @@ while true do
     else
         status = "light"
     end
-    
+
     print("["..status.."] ADC value read: "..adc_val.." (approximately: "..(STEP*adc_val).."V)")
 
     tmr.delay(1000 * 1000 * 1)

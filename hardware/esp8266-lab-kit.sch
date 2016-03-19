@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3323,7 +3323,7 @@ DIN A4, landscape with location and doc. field</description>
 12k</text>
 <text x="181.61" y="27.94" size="1.524" layer="97" font="vector" rot="R90">As part of the
 NodeMCU board</text>
-<text x="210.82" y="11.43" size="1.778" layer="203" distance="60">Revision A</text>
+<text x="210.82" y="11.43" size="1.778" layer="203" distance="60">Revision B</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="53.34" y="109.22"/>
@@ -3376,21 +3376,6 @@ NodeMCU board</text>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="121.92" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC_RAW" class="0">
-<segment>
-<pinref part="VR1" gate="G$1" pin="2"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="149.86" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="147.32" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="147.32" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="147.32" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
-<junction x="53.34" y="147.32"/>
-<pinref part="U1" gate="G$1" pin="RSV@1"/>
-<wire x1="104.14" y1="124.46" x2="78.74" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="124.46" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
-<label x="81.28" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -3578,6 +3563,19 @@ NodeMCU board</text>
 <wire x1="104.14" y1="91.44" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="91.44" x2="76.2" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC" class="0">
+<segment>
+<pinref part="VR1" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="149.86" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="147.32" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="A0"/>
+<wire x1="104.14" y1="127" x2="86.36" y2="127" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="127" x2="86.36" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="147.32" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
+<label x="88.9" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -209,7 +209,7 @@
 <rectangle x1="62.022" y1="31.807" x2="62.422" y2="32.207" layer="200"/>
 <rectangle x1="63.222" y1="31.807" x2="63.622" y2="32.207" layer="200"/>
 <text x="56.825" y="13.727" size="1.016" layer="21" font="vector" ratio="12">electrolama.com/p/elk</text>
-<text x="56.825" y="15.505" size="1.016" layer="21" font="vector" ratio="12">Revision A</text>
+<text x="56.825" y="15.505" size="1.016" layer="21" font="vector" ratio="12">Revision B</text>
 <text x="56.825" y="17.283" size="1.27" layer="21" font="vector" ratio="12">ESP8266 Lab Kit</text>
 <text x="10.35" y="2.14" size="1.27" layer="25" font="vector" rot="R90">DHT11 (D12)</text>
 <text x="4" y="16.745" size="1.27" layer="25" font="vector" rot="R90">HC-SR501 (D11)</text>
@@ -947,21 +947,6 @@ design rules under a new name.
 <wire x1="58.42" y1="42.545" x2="58.42" y2="40.386" width="0.508" layer="16"/>
 <wire x1="58.42" y1="40.386" x2="61.976" y2="36.83" width="0.508" layer="16"/>
 </signal>
-<signal name="ADC_RAW">
-<contactref element="VR1" pad="2"/>
-<contactref element="R1" pad="1"/>
-<contactref element="U1" pad="RSV_1"/>
-<wire x1="2.855" y1="10.84" x2="2.855" y2="37.145" width="0.508" layer="16"/>
-<wire x1="2.855" y1="37.145" x2="5.715" y2="40.005" width="0.508" layer="16"/>
-<wire x1="5.715" y1="40.005" x2="31.335" y2="40.005" width="0.508" layer="16"/>
-<wire x1="31.335" y1="40.005" x2="31.57" y2="40.24" width="0.508" layer="16"/>
-<wire x1="37.92" y1="45.72" x2="36.195" y2="45.72" width="0.508" layer="16"/>
-<wire x1="36.195" y1="45.72" x2="35.56" y2="45.085" width="0.508" layer="16"/>
-<wire x1="35.56" y1="45.085" x2="35.56" y2="40.64" width="0.508" layer="16"/>
-<wire x1="35.56" y1="40.64" x2="34.925" y2="40.005" width="0.508" layer="16"/>
-<wire x1="34.925" y1="40.005" x2="31.805" y2="40.005" width="0.508" layer="16"/>
-<wire x1="31.805" y1="40.005" x2="31.57" y2="40.24" width="0.508" layer="16"/>
-</signal>
 <signal name="D11">
 <contactref element="U3" pad="OUT"/>
 <contactref element="U1" pad="SD2"/>
@@ -1028,6 +1013,19 @@ design rules under a new name.
 <wire x1="26.67" y1="2.54" x2="25.4" y2="3.81" width="0.508" layer="16"/>
 <wire x1="25.4" y1="3.81" x2="25.4" y2="33.465" width="0.508" layer="16"/>
 <wire x1="25.4" y1="33.465" x2="26.86" y2="34.925" width="0.508" layer="16"/>
+</signal>
+<signal name="ADC">
+<contactref element="VR1" pad="2"/>
+<contactref element="R1" pad="1"/>
+<contactref element="U1" pad="A0"/>
+<wire x1="31.57" y1="42.78" x2="31.57" y2="44.27" width="0.4064" layer="16"/>
+<wire x1="31.57" y1="44.27" x2="32.385" y2="45.085" width="0.4064" layer="16"/>
+<wire x1="37.92" y1="45.72" x2="33.02" y2="45.72" width="0.4064" layer="16"/>
+<wire x1="33.02" y1="45.72" x2="32.385" y2="45.085" width="0.4064" layer="16"/>
+<wire x1="2.855" y1="10.84" x2="2.855" y2="29.525" width="0.4064" layer="16"/>
+<wire x1="2.855" y1="29.525" x2="15.875" y2="42.545" width="0.4064" layer="16"/>
+<wire x1="31.57" y1="42.78" x2="16.11" y2="42.78" width="0.4064" layer="16"/>
+<wire x1="16.11" y1="42.78" x2="15.875" y2="42.545" width="0.4064" layer="16"/>
 </signal>
 </signals>
 </board>
